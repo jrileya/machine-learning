@@ -68,5 +68,5 @@ data/*
 # Ignore pickles
 code/*.pickle
 
+.python-version
 .ipynb_checkpoints
-data/products.csv

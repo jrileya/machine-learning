@@ -1,47 +1,40 @@
-# Introduction to Machine Learning with Scikit-Learn
+# XBUS 505: Data Analysis II: Machine Learning
 
-**Code &amp; Data for Introduction to Machine Learning with Scikit-Learn**
+**An Introduction to Machine Learning with Scikit-Learn**
 
 [![Scikit-Learn Cheat Sheet](docs/img/cheat_sheet.png)](http://scikit-learn.org/stable/tutorial/machine_learning_map/)
 
-## Installing Scikit-Learn with pip
+## Getting Started
 
-See the full [installation instructions](http://scikit-learn.org/stable/install.html) for more details; these are provided for convenience only.
+Please install the dependencies for this repository using `pip` or `conda` as follows:
 
-Scikit-Learn requires:
+```
+$ pip install -U -r requirements.txt
+```
 
-- Python >= 2.6 or >= 3.3
-- Numpy >= 1.6.1
-- SciPy >= 0.9
+or
 
-Once you have installed `pip` (the python package manager):
+```
+$ conda install -f requirements.txt
+```
 
-### Mac OS X
+Note that you may want to install these requirements in a virtualenv or conda environment in order to make dependency management simpler.
 
-This should be super easy:
+After you've installed the dependencies, simply open a Jupyter notebook:
 
-    pip install -U numpy scipy scikit-learn
+```
+$ jupyter notebook
+```
 
-Now just wait! Also, you have no excuse not to do this in a virtualenv.
+## Organization
 
-### Windows
+If you're here from a cohort before Spring 2020, please refer to the `archive` folder to find any notebooks that may have been demonstrated during your courses.
 
-Install [numpy](http://numpy.scipy.org/) and [scipy](http://www.scipy.org/) with their official installers. You can then use PyPi to install scikit-learn:
+The `demos` folder contains live code exercises by date. If you're looking for code that was written during class, look for the course date in this folder.
 
-    pip install -U scikit-learn
+The `examples` folder contains work submitted by students engaged in the UCI machine learning repository. Please feel free to submit a PR with your work in this folder!
 
-If you're having trouble, consider one of the unofficial windows installers or anacondas (see the Scikit-Learn page for more).
+The `notebooks` folder has some example notebooks to refer to when working on the UCI machine learning lab or working with scikit-learn. In particular:
 
-### Ubuntu Linux
-
-Unfortunately there are no official binary packages for Linux. First install the build dependencies:
-
-    sudo apt-get install build-essential python-dev python-setuptools \
-        python-numpy python-scipy \
-        libatlas-dev libatlas3gf-base
-
-Then you can build (hopefully) Scikit-learn with pip:
-
-    pip install --user --install-option="--prefix=" -U scikit-learn
-
-Keep in mind however, that there are other dependencies and might be issues with ATLAS and BLAS - see the official installation for more.
+- **estimators.ipynb** - a tour of Scikit-Learn from the perspective of the API
+- **wheat.ipynb** - an example classification notebook
